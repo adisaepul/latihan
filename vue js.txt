@@ -1,0 +1,16 @@
+vue js
+1. intro
+2. instance dan property
+3. data binding
+4. computed properties
+5. conditional directives
+6. loop list
+7. list methode
+9. menggunakan filter
+10. methode dan v on
+11. more von and vbind
+12. input binding
+13. components
+14. components 2 and closing
+15. dynamic components
+16. transition vue

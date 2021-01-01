@@ -1,0 +1,8 @@
+carousel = gambar berubah ubah
+collapse = klik muncul text
+drop down = muncul pilihan ketika di klik
+modal = klik muncul alert
+popover = klik muncul keterangan
+scrollspy = scrol 
+toast = terakhir online
+tooltip = light notif
