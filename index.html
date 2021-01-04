@@ -2,15 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>latihan kudu bisa</title>
     
 </head>
 <body>
-    <div id="app">
+    <header>
+        <div class="row">
+        <div class="navbar-default">
+            <nav class="navbar">
+                <div class="col">
+                    <img src="gambar/logo.png" alt="logo" width="160px" height="80px">
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div> 
+            </nav>
+        </div> 
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <h3>Column 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur architecto molestias nemo voluptatem iusto similique inventore cupiditate eaque praesentium accusantium? Nesciunt quibusdam quia tempore voluptatem.</p>
+              </div>
+              <div class="col-sm-4">
+                <h3>Column 2</h3>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+          </div>
+    </section>
+    <footer>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+           
+    </footer>
+    <!-- <div id="app">
     {{ nama }} - {{ umur }}
     {{ raw }}
-    </div>
+    </div> -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script>
     var vo = new Vue ({
@@ -18,11 +63,10 @@
         data :{
             nama: "adi",
             umur: 100,
-            raw : '<p> mantap jaya </p>'
+            raw : '<p>mantap jaya</p>'
         },
 
     });
     </script>
-    
 </body>
 </html>
