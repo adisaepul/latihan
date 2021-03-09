@@ -1,14 +1,15 @@
 <?php
+require 'functions.php';
+$mahasiswa = query($koneksi, "SELECT * FROM mahasiswa");
 //koneksi database
-$koneksi = mysqli_connect("localhost", "root","", "phpdasar");
+// $koneksi = mysqli_connect("localhost", "root","", "phpdasar");
 //ambil data dari tabel mahasiswa
-$result = mysqli_query($koneksi, "SELECT * FROM mahasiswa");
-
-if (!$result) {
-    echo mysqli_error();
-}
-$hasil = mysqli_fetch_row($result);
-var_dump($hasil);
+//  
+// if (!$result) {
+//     echo mysqli_error();
+// }
+// $hasil = mysqli_fetch_row($result);
+// var_dump($hasil);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,13 +30,24 @@ var_dump($hasil);
             <th>Email</th>
             <th>Jurusan</th>
         </tr>
+
+        <?php $i = 1; ?>
+        <?php foreach ($mahasiswa as $row )  : ?>
         <tr>
-            <td>1</td>
+            <td><?= $i; ?></td>
             <td>
-                <a href=#>Ubah</a> | 
-                <a href="">Hapus</a>
+                <a href="#">Ubah</a> | 
+                <a href="#">Hapus</a>
             </td>
+            <td><img src="img/<?= $row["gambar"];?>" alt="" srcset=""></td>
+            <td><?= $row["nrp"]?></td>
+            <td><?= $row["nama"]?></td>
+            <td><?= $row["email"]?></td>
+            <td><?= $row["jurusan"]?></td>
         </tr>
+        <?php $i++;?>
+        <?php var_dump($i);?>
+        <?php endforeach; ?>
     </table>
 </body>
 </html>
